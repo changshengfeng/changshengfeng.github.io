@@ -3,7 +3,13 @@ description: "暗场CT | 医学影像重建 | Deep Learning"
 url: "https://changshengfeng.github.io"
 repository: "changshengfeng/changshengfeng.github.io"
 
-theme: minimal-mistakes-jekyll
+
+
+remote_theme: mmistakes/minimal-mistakes@4.24.0
+
+plugins:
+  - jekyll-include-cache
+
 
 plugins:
   - jekyll-include-cache
