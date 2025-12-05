@@ -104,11 +104,12 @@ social:
   links: # An array of links to social media profiles
 
 # Analytics
+# Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : "G-EYFKFRX11M"   # ← 替换为你的 GA4 ID
+    anonymize_ip         : false
 
 
 # Site Author
