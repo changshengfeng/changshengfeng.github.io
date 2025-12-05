@@ -1,5 +1,22 @@
-title: "冯昌升的技术博客"
+title: "技术博客"
 description: "暗场CT | 医学影像重建 | Deep Learning"
-url: "https://changshengfeng.github.io"         # 一定要是这个格式（含 https）
-repository: "changshengfeng/changshengfeng.github.io"   # ← 关键：指定仓库名
-google_analytics: "G-EYFKFRX11M"   # 可选，之后填真实 ID
+url: "https://changshengfeng.github.io"
+repository: "changshengfeng/changshengfeng.github.io"
+
+theme: minimal-mistakes-jekyll
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Analytics
+analytics:
+  provider               : "google-gtag"
+  google:
+    tracking_id          : "G-EYFKFRX11M"
+    anonymize_ip         : false
+
+markdown: kramdown
