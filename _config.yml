@@ -1,28 +1,34 @@
 title: "技术博客"
 description: "暗场CT | 医学影像重建 | Deep Learning"
 url: "https://changshengfeng.github.io"
+baseurl: "" # 必须为空，否则访问路径会错
 repository: "changshengfeng/changshengfeng.github.io"
 
+# 使用 Minimal Mistakes 主题（远程引用）
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
-
-remote_theme: mmistakes/minimal-mistakes@4.24.0
-
+# Jekyll 插件
 plugins:
-  - jekyll-include-cache
-
-
-plugins:
+  - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-paginate
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Analytics
-analytics:
-  provider               : "google-gtag"
-  google:
-    tracking_id          : "G-EYFKFRX11M"
-    anonymize_ip         : false
+# 分页（推荐）
+paginate: 5
+paginate_path: "/page:num"
 
+# Markdown引擎
 markdown: kramdown
+
+# Google Analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-EYFKFRX11M"
+    anonymize_ip: false
+
+# 页面美化与SEO优化推荐
+permalink: /:title/
