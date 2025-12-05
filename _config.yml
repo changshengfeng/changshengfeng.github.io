@@ -5,8 +5,8 @@ baseurl: "" # 必须为空，否则访问路径会错
 repository: "changshengfeng/changshengfeng.github.io"
 
 # 使用 Minimal Mistakes 主题（远程引用）
+theme: null
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-
 # Jekyll 插件
 plugins:
   - jekyll-remote-theme
